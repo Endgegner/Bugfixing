@@ -15,13 +15,9 @@
 #### Translations
 - Translate Metal+
 - Translate Whitefox
-- Translate Red Dragon~ Fix material Color
-<done>- Translate Kill for me Settings</done>
 - Translate Thrumbos Extension
 - Transalte Gloomy Furniture
 - Translate Cupros Alloys(?)
-<done>- Translate RimWorld SpartanFoundry</done>
-<done>- Translate Vanilla Furniture Expanded</done>
 
 #### Easy
 - Whip: Add Mood Moviestar (Gimmicks)
@@ -39,7 +35,10 @@
 
 - Find a way which takes away compQuality from Flowers but makes them unstackable and remove number under it (even with OgreStack or similar mods installed) (Gimmicks)
 - Check CompQuality on Gimmicks, maybe remove materials from fan and whip (not sure tho) (Gimmicks)
+
 - Fast Regen (Beds) überarbeiten
+- Red Dragon~ Fix material Color
+
 - Lost in Translation - German Deutsch MEGA Patch
 
 - GitHub Update (All Repos)
