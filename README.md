@@ -4,9 +4,7 @@
 - Grenade Launcher Machine Gun (Shoot 4-8 times then Shoot grenade)
 - Practice Mod with Archery Targets (Fork)
 - Implantable Guns: Minigun on Bodypart Arm (Its your hand you care about it, maybe not since you lost it but...)
-<addedPartProps><isBionic>true</isBionic><isGoodWeapon>true</isGoodWeapon></addedPartProps>
-<!-- Optional. Defined as true for powerful body-parts like PowerClaw and ScytherBlade -->
-- Gloves and Boots (Hand'n'Footwer/Boots and Stuff[1.0])
+- Gloves and Boots (Hand'n'Footwer/Boots and Stuff)
 - Mechanoid Power Cell
 - Iroriplus
 - BeaverControl
