@@ -1,7 +1,7 @@
 # Bugfixing
 Files to fix and Stuff to do
 
-<="ToDo List:" />
+<font color="#BF00FF">ToDo List:</font>
 - Develop BedSearch 	
 - Holy Grenade Mod
 - Grenade Launcher Machine Gun (Shoot 4-8 times then Shoot grenade)
@@ -17,7 +17,7 @@ Files to fix and Stuff to do
 - Need a function: Turret activates when someone comes close, enemy pawns ignore them before that
 - Find working way for Mod dependecies/loadafter on [TWC]Cupro's Stones 1.0 in ModManager
 
-<class Translations />
+<font color="#7401DF">Translations</font>
 - Translate Metal+
 - Translate Whitefox
 - Translate Red Dragon~ Fix material Color
@@ -27,12 +27,8 @@ Files to fix and Stuff to do
 - Translate Cupros Alloys(?)
 <done>- Translate RimWorld SpartanFoundry</done>
 <done>- Translate Vanilla Furniture Expanded</done>
-And you asked yourself where is the german Translation, Endgegner?
 
-Here it is...
-https://github.com/Endgegner/RimWorld-Mod-Vanilla-Furniture-Expanded-Deutsch-German
-
-<class Easy />
+<font color="#DF01D7">Easy</font>
 - <done>Butchers Cleaver Add +CookingSpeed Patch when using Gimmicks and Grunge Weaon Pack together (Gimmicks)</done>
 - <done>Scythe +PlantHarvestYield +PlantWorkSpeed (Also Grunge Weapon Pack Patch) (Gimmicks)</done>
 - Whip: Add Mood Moviestar (Gimmicks)
@@ -57,14 +53,6 @@ https://github.com/Endgegner/RimWorld-Mod-Vanilla-Furniture-Expanded-Deutsch-Ger
 
 - GitHub Update (All Repos)
 - Discover HugsLib
-<
+
 ### Translation Report (468 Errors)
 2 Error > DGWP
-
-<="Bionics Expansion: [FSF] Vanilla Bionics Expansion
-Archotech Expansion: Archotech Expanded Prosthetics
-Lulus Animal Cybernetics
-[SYR] Prosthetic Table"> !
-
-Deutsch Übersetzungen Mod-Übersicht (GERMAN)
-Eine Liste exzellenter Mods für RimWorld mit integrierten Deutsch Übersetzungen.
