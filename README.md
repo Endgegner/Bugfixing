@@ -1,4 +1,4 @@
-#### ToDo List:
+### ToDo List:
 - Develop BedSearch 	
 - Holy Grenade Mod
 - Grenade Launcher Machine Gun (Shoot 4-8 times then Shoot grenade)
@@ -12,7 +12,7 @@
 - Need a function: Turret activates when someone comes close, enemy pawns ignore them before that
 - Find working way for Mod dependecies/loadafter on [TWC]Cupro's Stones 1.0 in ModManager
 
-##### Translations
+#### Translations
 - Translate Metal+
 - Translate Whitefox
 - Translate Red Dragon~ Fix material Color
@@ -23,7 +23,7 @@
 <done>- Translate RimWorld SpartanFoundry</done>
 <done>- Translate Vanilla Furniture Expanded</done>
 
-##### Easy
+#### Easy
 - <done>Butchers Cleaver Add +CookingSpeed Patch when using Gimmicks and Grunge Weaon Pack together (Gimmicks)</done>
 - <done>Scythe +PlantHarvestYield +PlantWorkSpeed (Also Grunge Weapon Pack Patch) (Gimmicks)</done>
 - Whip: Add Mood Moviestar (Gimmicks)
