@@ -50,4 +50,4 @@
 - Discover HugsLib
 
 ### Translation Report (468 Errors)
-2 Error > DGWP
+- 2 Error > DGWP
