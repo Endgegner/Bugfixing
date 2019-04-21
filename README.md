@@ -1,6 +1,3 @@
-# Bugfixing
-Files to fix and Stuff to do
-
 <font color="#BF00FF">ToDo List:</font>
 - Develop BedSearch 	
 - Holy Grenade Mod
