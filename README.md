@@ -20,29 +20,29 @@
 - Translate Cupros Alloys(?)
 
 #### Easy
-- Whip: Add Mood Moviestar (Gimmicks)
-- Rework Fan texture, white point (Gimmicks)
-- Familien Mensch Romantik (MCT)
-- Bastardschwert Dead Goats Weapon Pack Texture (DGWP)
-- gauss sniper? Caps (DGWP)
+- Whip: Add Mood Moviestar (Gimmicks)<br>
+- Rework Fan texture, white point (Gimmicks)<br>
+- Familien Mensch Romantik (MCT)<br>
+- Bastardschwert Dead Goats Weapon Pack Texture (DGWP)<br>
+- gauss sniper? Caps (DGWP)<br>
 
-- Korrektur EdB Prep Care
-- No Pawns left behind functionallity check
-- Change name advanced parka, adapt stats
-- Jewelry Cut Gems outcome/income
-- Floors Fix STN (Bug)
-- Fix minor probem with MCT FalloutTraits: FT_Toughness 0/1
+- Korrektur EdB Prep Care<br>
+- No Pawns left behind functionallity check<br>
+- Change name advanced parka, adapt stats<br>
+- Jewelry Cut Gems outcome/income<br>
+- Floors Fix STN (Bug)<br>
+- Fix minor probem with MCT FalloutTraits: FT_Toughness 0/1<br>
 
-- Find a way which takes away compQuality from Flowers but makes them unstackable and remove number under it (even with OgreStack or similar mods installed) (Gimmicks)
-- Check CompQuality on Gimmicks, maybe remove materials from fan and whip (not sure tho) (Gimmicks)
+- Find a way which takes away compQuality from Flowers but makes them unstackable and remove number under it (even with OgreStack or similar mods installed) (Gimmicks)<br>
+- Check CompQuality on Gimmicks, maybe remove materials from fan and whip (not sure tho) (Gimmicks)<br>
 
-- Fast Regen (Beds) überarbeiten
-- Red Dragon~ Fix material Color
+- Fast Regen (Beds) überarbeiten<br>
+- Red Dragon~ Fix material Color<br>
 
-- Lost in Translation - German Deutsch MEGA Patch
+- Lost in Translation - German Deutsch MEGA Patch<br>
 
-- GitHub Update (All Repos)
-- Discover HugsLib
+- GitHub Update (All Repos)<br>
+- Discover HugsLib<br>
 
 ### Translation Report (468 Errors)
 - 2 Error > DGWP
