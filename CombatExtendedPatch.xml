@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  
+  <!-- Mod Support for Combat Extended -->
+  <Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Combat Extended</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<!-- Compatibility for Turret -->
+			<li Class="PatchOperationInsert">
+			<xpath>*/ThingDef</xpath>
+			<value>
+			<ThingCategoryDef>
+			  <defName>Ammo44NitroExpress</defName>
+			  <label>.44 Nitro Express</label>
+			  <parent>AmmoHighCaliber</parent>
+			  <iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
+			</ThingCategoryDef>
+			
+		    <CombatExtended.AmmoSetDef>
+			<defName>AmmoSet_44NitroExpress</defName>
+			<label>.44 Nitro Express</label>
+			<ammoTypes>
+			  <Ammo_600NitroExpress_FMJ>Bullet_44NitroExpress_FMJ</Ammo_600NitroExpress_FMJ>
+			</ammoTypes>
+		    </CombatExtended.AmmoSetDef>
+
+		    <ThingDef Class="CombatExtended.AmmoDef" Name="Ammo44NitroExpressBase" ParentName="AmmoBase" Abstract="True">
+			<description>Full Metal Jacket Nitro Express .44 bullets. Designed to penetrate even the hardest materials and direct impact.</description>
+			<statBases>
+			  <Mass>0.067</Mass>
+			  <Bulk>0.09</Bulk>
+			</statBases>
+			<tradeTags>
+			  <li>CE_AutoEnableTrade</li>
+			  <li>CE_AutoEnableCrafting</li>
+			</tradeTags>
+			<thingCategories>
+			  <li>Ammo44NitroExpress</li>
+			</thingCategories>
+		    </ThingDef>
+
+		    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo44NitroExpressBase">
+			<defName>Ammo_44NitroExpress_FMJ</defName>
+			<label>.44 Nitro Express cartridge (FMJ)</label>
+			<graphicData>
+			  <texPath>Things/Ammo/HighCaliber/FMJ</texPath>
+			  <graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+			<statBases>
+			  <MarketValue>0.27</MarketValue>
+			</statBases>
+			<ammoClass>FullMetalJacket</ammoClass>
+			<cookOffProjectile>Bullet_600NitroExpress_FMJ</cookOffProjectile>
+		    </ThingDef>
+
+		    <ThingDef Class="CombatExtended.AmmoDef" Name="Base44NitroExpressBullet" ParentName="BaseBullet" Abstract="true">
+			<graphicData>
+			  <texPath>Things/Projectile/Bullet_Big</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			  <damageDef>Bullet</damageDef>
+			  <speed>195</speed>
+			  <dropsCasings>true</dropsCasings>
+			</projectile>
+		    </ThingDef>
+
+		    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base44NitroExpressBullet">
+			<defName>Bullet_44NitroExpress_FMJ</defName>
+			<label>.44 Nitro Express bullet (FMJ)</label>
+			<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			  <damageAmountBase>51</damageAmountBase>
+			  <armorPenetrationBase>0.83</armorPenetrationBase>
+			</projectile>
+		    </ThingDef>
+			</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="PulsefireTurretGun"]</xpath>
+				<value>
+					<ThingDef ParentName="BuildingBase">
+						<defName>PulsefireTurretGun</defName>
+						<label>Pulsefire Turret</label>
+						<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+						<graphicData>
+							<texPath>Things/Building/Security/PulsefireTurretBase</texPath>
+							<shaderType>CutoutComplex</shaderType>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(2,2)</drawSize>
+							<damageData>
+								<rect>(0.2,0.2,0.6,0.6)</rect>
+							</damageData>
+						</graphicData>
+						<castEdgeShadows>true</castEdgeShadows>
+						<minifiedDef>MinifiedThing</minifiedDef>
+						<uiIconPath>Things/Building/Security/PulsefireTurretGun_Ico</uiIconPath>
+						<altitudeLayer>Building</altitudeLayer>
+						<pathCost>50</pathCost>
+						<statBases>
+							<MaxHitPoints>175</MaxHitPoints>
+							<Flammability>0.25</Flammability>
+							<WorkToBuild>3000</WorkToBuild>
+							<Mass>120</Mass>
+							<Beauty>-15</Beauty>
+							<ShootingAccuracyTurret>0.99</ShootingAccuracyTurret>
+						</statBases>
+						<tickerType>Normal</tickerType>
+						<comps Inherit="False">
+							<li Class="CompProperties_Explosive">
+								<explosiveRadius>4</explosiveRadius>
+								<explosiveDamageType>Bomb</explosiveDamageType>
+								<chanceNeverExplodeFromDamage>0.8</chanceNeverExplodeFromDamage>
+							</li>
+							<li Class="CompProperties_Forbiddable"/>
+							<li Class="CompProperties_Power">
+								<compClass>CompPowerTrader</compClass>
+								<basePowerConsumption>400</basePowerConsumption>
+							</li>
+							<li Class="CompProperties_Flickable"/>
+							<li Class="CompProperties_Breakdownable"/>
+						</comps>
+						<description>A turret with a Pulsefire rifle on top that automtically fires at nearby and distant enemies. Has a chance to explode when damaged.</description>
+						<passability>PassThroughOnly</passability>
+						<fillPercent>0.85</fillPercent>
+						<hasTooltip>true</hasTooltip>
+						<thingCategories>
+							<li>BuildingsSecurity</li>
+						</thingCategories>
+						<stuffCategories>
+							<li>Metallic</li>
+						</stuffCategories>
+						<costStuffCount>125</costStuffCount>
+						<costList>
+							<Steel>125</Steel>
+							<ComponentIndustrial>8</ComponentIndustrial>
+						</costList>
+						<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+						<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+						<designationCategory>Security</designationCategory>
+						<designationHotKey>Misc5</designationHotKey>
+						<specialDisplayRadius>56</specialDisplayRadius>
+						<stealable>false</stealable>
+						<rotatable>true</rotatable>
+						<building>
+							<ai_combatDangerous>true</ai_combatDangerous>
+							<turretGunDef>Gun_PulsefireTurret</turretGunDef>
+							<turretBurstCooldownTime>6.0</turretBurstCooldownTime>
+							<turretTopGraphicPath>Things/Building/Security/PulsefireTurretGun</turretTopGraphicPath>
+						</building>
+						<placeWorkers>
+							<li>PlaceWorker_TurretTop</li>
+						</placeWorkers>
+						<researchPrerequisites>
+							<li>PulsefireTech</li>
+						</researchPrerequisites>
+					</ThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_PulsefireTurret"]</xpath>
+				<value>
+					<ThingDef ParentName="BaseHumanGun">
+						<defName>Gun_PulsefireTurret</defName>
+						<label>Pulsefire Turret</label>
+						<menuHidden>true</menuHidden>
+						<description>Base defense turret for military outposts. Has a direct impact rifle with Pulsefire technology attached to it. Maximum range, great accuracy and full metal jacket power mounted on an auto turret.</description>
+						<graphicData>
+							<texPath>Things/Building/Security/PulsefireTurretBase</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<soundInteract>Interact_Rifle</soundInteract>
+						<tradeability>None</tradeability>
+						<destroyOnDrop>true</destroyOnDrop>
+						<statBases>
+						  <SightsEfficiency>0.8</SightsEfficiency>
+						  <ShotSpread>0.05</ShotSpread>
+						  <SwayFactor>1.21</SwayFactor>
+						  <Bulk>14.05</Bulk>
+						  <Mass>10.50</Mass>
+						  <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+						</statBases>
+						<weaponTags>
+							<li>TurretGun</li>
+						</weaponTags>
+						<verbs>
+						  <li Class="CombatExtended.VerbPropertiesCE">
+							<recoilAmount>1.5</recoilAmount>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<projectileDef>Bullet_44NitroExpress_FMJ</projectileDef>
+							<warmupTime>3.0</warmupTime>
+							<range>75</range>
+							<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+							<burstShotCount>1</burstShotCount>
+							<soundCast>PulsefireTurretRound</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>20</muzzleFlashScale>
+							<targetParams>
+							  <canTargetLocations>true</canTargetLocations>
+							</targetParams>
+							<recoilPattern>Mounted</recoilPattern>
+						  </li>
+						</verbs>
+					</ThingDef>
+				</value>
+			</li>
+		</operations>
+	</match>
+  </Operation>
+
+</Patch>
