@@ -37,14 +37,16 @@
 							<WorkToBuild>3000</WorkToBuild>
 							<Mass>120</Mass>
 							<Beauty>-15</Beauty>
+							<AimingAccuracy>0.95</AimingAccuracy>
+							<ShootingAccuracyTurret>0.85</ShootingAccuracyTurret>
 						</statBases>
 						<tickerType>Normal</tickerType>
 						<comps Inherit="False">
-							<li Class="CompProperties_Explosive">
-								<explosiveRadius>4</explosiveRadius>
+							<!-- <li Class="CompProperties_Explosive">
+								<explosiveRadius>1</explosiveRadius>
 								<explosiveDamageType>Bomb</explosiveDamageType>
 								<chanceNeverExplodeFromDamage>0.8</chanceNeverExplodeFromDamage>
-							</li>
+							</li> -->
 							<li Class="CompProperties_Forbiddable"/>
 							<li Class="CompProperties_Power">
 								<compClass>CompPowerTrader</compClass>
@@ -106,11 +108,15 @@
 						<tradeability>None</tradeability>
 						<destroyOnDrop>true</destroyOnDrop>
 						<statBases>
-						  <SightsEfficiency>0.8</SightsEfficiency>
-						  <ShotSpread>0.05</ShotSpread>
-						  <SwayFactor>1.21</SwayFactor>
-						  <Bulk>14.05</Bulk>
-						  <Mass>10.50</Mass>
+						  <!-- <AccuracyTouch>1.00</AccuracyTouch>
+						  <AccuracyShort>0.95</AccuracyShort>
+						  <AccuracyMedium>0.90</AccuracyMedium>
+						  <AccuracyLong>0.85</AccuracyLong> -->
+						  <SightsEfficiency>0.98</SightsEfficiency>
+						  <ShotSpread>0.01</ShotSpread>
+						  <SwayFactor>0.25</SwayFactor>
+						  <Bulk>18.05</Bulk>
+						  <Mass>15.50</Mass>
 						  <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 						</statBases>
 						<weaponTags>
@@ -121,7 +127,7 @@
 							<recoilAmount>0.79</recoilAmount>
 							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 							<hasStandardCommand>true</hasStandardCommand>
-							<projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
+							<defaultProjectile>Bullet_600NitroExpress_FMJ</defaultProjectile>
 							<warmupTime>1.25</warmupTime>
 							<range>75</range>
 							<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -129,11 +135,22 @@
 							<soundCast>PulsefireTurretRound</soundCast>
 							<muzzleFlashScale>9</muzzleFlashScale>
 							<targetParams>
-							  <canTargetLocations>true</canTargetLocations>
+							  <canTargetLocations>false</canTargetLocations>
 							</targetParams>
 							<recoilPattern>Mounted</recoilPattern>
 						  </li>
 						</verbs>
+						<comps>
+							<li Class="CombatExtended.CompProperties_AmmoUser">
+								<magazineSize>75</magazineSize>
+								<reloadTime>1.8</reloadTime>
+								<ammoSet>AmmoSet_600NitroExpress</ammoSet>
+								<spawnUnloaded>false</spawnUnloaded>
+							</li>
+							<li Class="CombatExtended.CompProperties_FireModes">
+								<aiAimMode>AimedShot</aiAimMode>
+							</li>
+						</comps>	
 					</ThingDef>
 				</value>
 			</li>
