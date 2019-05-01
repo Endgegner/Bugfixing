@@ -131,7 +131,7 @@
 							<warmupTime>1.25</warmupTime>
 							<range>75</range>
 							<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-							<burstShotCount>1</burstShotCount>
+							<burstShotCount>2</burstShotCount>
 							<soundCast>PulsefireTurretRound</soundCast>
 							<muzzleFlashScale>9</muzzleFlashScale>
 							<targetParams>
@@ -142,15 +142,14 @@
 						</verbs>
 						<comps>
 							<li Class="CombatExtended.CompProperties_AmmoUser">
-								<magazineSize>75</magazineSize>
-								<reloadTime>1.8</reloadTime>
+								<magazineSize>500</magazineSize>
+								<reloadTime>8.5</reloadTime>
 								<ammoSet>AmmoSet_600NitroExpress</ammoSet>
-								<spawnUnloaded>false</spawnUnloaded>
 							</li>
 							<li Class="CombatExtended.CompProperties_FireModes">
 								<aiUseBurstMode>FALSE</aiUseBurstMode>
 								<aiAimMode>AimedShot</aiAimMode>
-								<aimedBurstShotCount>6</aimedBurstShotCount>
+								<aimedBurstShotCount>1</aimedBurstShotCount>
 								<noSnapshot>true</noSnapshot>
 								<noSingleShot>true</noSingleShot>
 							</li>
