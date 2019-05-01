@@ -42,11 +42,11 @@
 						</statBases>
 						<tickerType>Normal</tickerType>
 						<comps Inherit="False">
-							<!-- <li Class="CompProperties_Explosive">
-								<explosiveRadius>1</explosiveRadius>
+							<li Class="CompProperties_Explosive">
+								<explosiveRadius>2</explosiveRadius>
 								<explosiveDamageType>Bomb</explosiveDamageType>
 								<chanceNeverExplodeFromDamage>0.8</chanceNeverExplodeFromDamage>
-							</li> -->
+							</li>
 							<li Class="CompProperties_Forbiddable"/>
 							<li Class="CompProperties_Power">
 								<compClass>CompPowerTrader</compClass>
@@ -148,7 +148,11 @@
 								<spawnUnloaded>false</spawnUnloaded>
 							</li>
 							<li Class="CombatExtended.CompProperties_FireModes">
+								<aiUseBurstMode>FALSE</aiUseBurstMode>
 								<aiAimMode>AimedShot</aiAimMode>
+								<aimedBurstShotCount>6</aimedBurstShotCount>
+								<noSnapshot>true</noSnapshot>
+								<noSingleShot>true</noSingleShot>
 							</li>
 						</comps>	
 					</ThingDef>
