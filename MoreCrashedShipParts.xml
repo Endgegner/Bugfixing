@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <!-- Mod Support for More Crashed Ship Parts -->
+  <Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>More Crashed Ship Parts</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="DolinskajaCrashedLightningShipPart" and @Name="ShipPartBase"]/killedLeavings</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="DolinskajaCrashedFireShipPart"]/killedLeavings[@Name="ShipPartBase"]</xpath>
+			</li>
+			<!-- Power Cell Fire Ship -->
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName="DolinskajaCrashedFireShipPart"]</xpath>
+				<value>
+				  <killedLeavings>
+					<MPC_MechanoidPCell>1</MPC_MechanoidPCell>
+					<Steel>175</Steel>
+					<Silver>325</Silver>
+					<Gold>110</Gold>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<ChunkSlagSteel>5</ChunkSlagSteel>
+				  </killedLeavings>
+				</value>
+			</li>
+			<!-- Power Cell Lightning Ship -->
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName="DolinskajaCrashedLightningShipPart"]</xpath>
+				<value>
+				  <killedLeavings>
+					<MPC_MechanoidPCell>1</MPC_MechanoidPCell>
+					<Steel>325</Steel>
+					<Silver>225</Silver>
+					<ComponentIndustrial>2</ComponentIndustrial>
+					<ComponentSpacer>1</ComponentSpacer>
+					<ChunkSlagSteel>3</ChunkSlagSteel>
+				  </killedLeavings>
+				</value>
+			</li>
+			<!-- AI Persona Core 2 Power Ship -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="MPC_CrashedPoisonShipPart"]/killedLeavings</xpath>
+				<value>
+					<AIPersonaCore>1</AIPersonaCore>
+				</value>
+			</li>
+		</operations>
+	</match>
+  </Operation>
+
+</Patch>
