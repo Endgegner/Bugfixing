@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ShipPartBase">
+    <defName>DolinskajaCrashedFireShipPart</defName>    
+    <label>ship part (fire)</label>
+    <description>A mysterious crashed piece of a spaceship. It may contain any manner of deadly defenders and exotic materials. This one seems to be setting its surroundings on fire.</description>
+    <graphicData>
+      <texPath>Things/Building/Exotic/CrashedPoisonShipPart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(255, 150, 185)</color>
+      <drawSize>(6,3)</drawSize>
+			<shadowData>
+				<volume>(5.5, 1.0, 2.45)</volume>
+			</shadowData>
+    </graphicData>
+		<comps>
+			<li Class="Dolinskaja.CompProps.DolinskajaCompProperties_FireStormRadius">
+				<radiusPerDayCurve>
+					<points>
+						<li>0,5</li>
+						<li>1.5,18</li>
+						<li>6,40</li>
+						<li>20,200</li>
+					</points>
+				</radiusPerDayCurve>
+				<harmFrequencyPerArea>0.015</harmFrequencyPerArea>
+			</li>
+		</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ShipPartBase">
+  	<defName>DolinskajaCrashedLightningShipPart</defName>
+  	<label>ship part (lightning)</label>
+  	<description>A mysterious crashed piece of a spaceship. It may contain any manner of deadly defenders and exotic materials. This one is somehow connected to the weather satellites, causing lightning strikes.</description>
+  	<graphicData>
+  		<texPath>Things/Building/Exotic/CrashedPoisonShipPart</texPath>
+  		<graphicClass>Graphic_Single</graphicClass>
+      <color>(185, 185, 255)</color>
+  		<drawSize>(6,3)</drawSize>
+  		<shadowData>
+  			<volume>(5.5, 1.0, 2.45)</volume>
+  		</shadowData>
+  	</graphicData>
+  	<comps>
+  		<li Class="Dolinskaja.CompProps.DolinskajaCompProperties_LightningFrequency">
+        <harmFrequencyGrowSpeed>0.030</harmFrequencyGrowSpeed>
+        <uberStrikeThreshold>10000</uberStrikeThreshold>
+        <maxStrikeInterval>17000</maxStrikeInterval>
+        <minStrikeInterval>500</minStrikeInterval>
+        <maxStrikePower>20</maxStrikePower>
+        <minStrikePower>5</minStrikePower>
+      </li>
+  	</comps>
+  </ThingDef>
+	
+</Defs>
