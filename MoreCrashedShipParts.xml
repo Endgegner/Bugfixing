@@ -10,10 +10,10 @@
 		<success>Normal</success>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName="DolinskajaCrashedLightningShipPart" and @Name="ShipPartBase"]/killedLeavings</xpath>
+				<xpath>/Defs/ThingDef[defName="DolinskajaCrashedLightningShipPart"]/killedLeavings</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName="DolinskajaCrashedFireShipPart"]/killedLeavings[@Name="ShipPartBase"]</xpath>
+				<xpath>/Defs/ThingDef[defName="DolinskajaCrashedFireShipPart"]/killedLeavings</xpath>
 			</li>
 			<!-- Power Cell Fire Ship -->
 			<li Class="PatchOperationInsert">
