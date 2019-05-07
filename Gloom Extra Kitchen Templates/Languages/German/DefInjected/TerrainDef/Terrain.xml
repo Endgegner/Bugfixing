@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SandstoneKitchenTile.label>sandstone kitchen floor</SandstoneKitchenTile.label>
+  <SandstoneKitchenTile.description>Classic kitchen floor. Easy to clean and lasts a lifetime.</SandstoneKitchenTile.description>
+
+  <GraniteKitchenTile.label>granite kitchen floor</GraniteKitchenTile.label>
+  <GraniteKitchenTile.description>Classic kitchen floor. Easy to clean and lasts a lifetime.</GraniteKitchenTile.description>
+
+  <LimestoneKitchenTile.label>limestone kitchen floor</LimestoneKitchenTile.label>
+  <LimestoneKitchenTile.description>Classic kitchen floor. Easy to clean and lasts a lifetime.</LimestoneKitchenTile.description>
+
+  <SlateKitchenTile.label>slate kitchen floor</SlateKitchenTile.label>
+  <SlateKitchenTile.description>Classic kitchen floor. Easy to clean and lasts a lifetime.</SlateKitchenTile.description>
+
+  <MarbleKitchenTile.label>marble kitchen floor</MarbleKitchenTile.label>
+  <MarbleKitchenTile.description>Classic kitchen floor. Easy to clean and lasts a lifetime.</MarbleKitchenTile.description>
+
+  <SuffedKitchenTile.label>Steel kitchen floor</SuffedKitchenTile.label>
+  <SuffedKitchenTile.description>Classic kitchen floor. Easy to clean and lasts a lifetime.</SuffedKitchenTile.description>
+
+</LanguageData>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SandstoneKitchenTile_Blueprint.label>sandstone kitchen floor (blueprint)</SandstoneKitchenTile_Blueprint.label>
+  <SandstoneKitchenTile_Frame.label>sandstone kitchen floor (building)</SandstoneKitchenTile_Frame.label>
+  <SandstoneKitchenTile_Frame.description>Terrain building in progress.</SandstoneKitchenTile_Frame.description>
+
+  <GraniteKitchenTile_Blueprint.label>granite kitchen floor (blueprint)</GraniteKitchenTile_Blueprint.label>
+  <GraniteKitchenTile_Frame.label>granite kitchen floor (building)</GraniteKitchenTile_Frame.label>
+  <GraniteKitchenTile_Frame.description>Terrain building in progress.</GraniteKitchenTile_Frame.description>
+
+  <LimestoneKitchenTile_Blueprint.label>limestone kitchen floor (blueprint)</LimestoneKitchenTile_Blueprint.label>
+  <LimestoneKitchenTile_Frame.label>limestone kitchen floor (building)</LimestoneKitchenTile_Frame.label>
+  <LimestoneKitchenTile_Frame.description>Terrain building in progress.</LimestoneKitchenTile_Frame.description>
+
+  <SlateKitchenTile_Blueprint.label>slate kitchen floor (blueprint)</SlateKitchenTile_Blueprint.label>
+  <SlateKitchenTile_Frame.label>slate kitchen floor (building)</SlateKitchenTile_Frame.label>
+  <SlateKitchenTile_Frame.description>Terrain building in progress.</SlateKitchenTile_Frame.description>
+
+  <MarbleKitchenTile_Blueprint.label>marble kitchen floor (blueprint)</MarbleKitchenTile_Blueprint.label>
+  <MarbleKitchenTile_Frame.label>marble kitchen floor (building)</MarbleKitchenTile_Frame.label>
+  <MarbleKitchenTile_Frame.description>Terrain building in progress.</MarbleKitchenTile_Frame.description>
+
+  <SuffedKitchenTile_Blueprint.label>Steel kitchen floor (blueprint)</SuffedKitchenTile_Blueprint.label>
+  <SuffedKitchenTile_Frame.label>Steel kitchen floor (building)</SuffedKitchenTile_Frame.label>
+  <SuffedKitchenTile_Frame.description>Terrain building in progress.</SuffedKitchenTile_Frame.description>
+
+</LanguageData>

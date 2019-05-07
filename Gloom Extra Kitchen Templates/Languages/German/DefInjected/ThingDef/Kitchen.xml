@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Kitchen -->
+  <SM_Sink.label>kitchen sink</SM_Sink.label>
+  <SM_Sink.description>A kitchen sink. Increases cooking speed and butchering speed. Lowers foodpoison chance by increasing the room cleanliness and connected worktable</SM_Sink.description>
+  <SM_Sink_Blueprint.label>kitchen sink (blueprint)</SM_Sink_Blueprint.label>
+  <SM_Sink_Blueprint_Install.label>kitchen sink (blueprint)</SM_Sink_Blueprint_Install.label>
+  <SM_Sink_Frame.label>kitchen sink (building)</SM_Sink_Frame.label>
+  <SM_Sink_Frame.description>A kitchen sink. Increases cooking speed and butchering speed. Lowers foodpoison chance by increasing the room cleanliness and connected worktable</SM_Sink_Frame.description>
+  
+  <SM_ButcherShelf.label>butcher shelf </SM_ButcherShelf.label>
+  <SM_ButcherShelf.description>A shelf with cleaning produts to keep the butcher table from getting to filthy. 
+
+Has to be placed above the butcher table.
+Increases work speed and lowers foodpoison chance by increasing the room cleanliness.</SM_ButcherShelf.description>
+  <SM_ButcherShelf_Blueprint.label>butcher shelf  (blueprint)</SM_ButcherShelf_Blueprint.label>
+  <SM_ButcherShelf_Blueprint_Install.label>butcher shelf  (blueprint)</SM_ButcherShelf_Blueprint_Install.label>
+  <SM_ButcherShelf_Frame.label>butcher shelf  (building)</SM_ButcherShelf_Frame.label>
+  <SM_ButcherShelf_Frame.description>A shelf with cleaning produts to keep the butcher table from getting to filthy. 
+
+Has to be placed above the butcher table.
+Increases work speed and lowers foodpoison chance by increasing the room cleanliness.</SM_ButcherShelf_Frame.description>
+
+  <SM_KitchenCupboard_A.label>kitchen cupboard A</SM_KitchenCupboard_A.label>
+  <SM_KitchenCupboard_A.description>Increases cooking speed and butchering speed. Lowers foodpoison chance by increasing the room cleanliness.</SM_KitchenCupboard_A.description>
+  <SM_KitchenCupboard_A_Blueprint.label>kitchen cupboard A (blueprint)</SM_KitchenCupboard_A_Blueprint.label>
+  <SM_KitchenCupboard_A_Blueprint_Install.label>kitchen cupboard A (blueprint)</SM_KitchenCupboard_A_Blueprint_Install.label>
+  <SM_KitchenCupboard_A_Frame.label>kitchen cupboard A (building)</SM_KitchenCupboard_A_Frame.label>
+  <SM_KitchenCupboard_A_Frame.description>Increases cooking speed and butchering speed. Lowers foodpoison chance by increasing the room cleanliness.</SM_KitchenCupboard_A_Frame.description>
+
+  <SM_KitchenCupboard_B.label>kitchen cupboard B</SM_KitchenCupboard_B.label>
+  <SM_KitchenCupboard_B.description>Increases cooking speed and butchering speed. Lowers foodpoison chance by increasing the cleanliness of connected worktable.</SM_KitchenCupboard_B.description>
+  <SM_KitchenCupboard_B_Blueprint.label>kitchen cupboard B (blueprint)</SM_KitchenCupboard_B_Blueprint.label>
+  <SM_KitchenCupboard_B_Blueprint_Install.label>kitchen cupboard B (blueprint)</SM_KitchenCupboard_B_Blueprint_Install.label>
+  <SM_KitchenCupboard_B_Frame.label>kitchen cupboard B (building)</SM_KitchenCupboard_B_Frame.label>
+  <SM_KitchenCupboard_B_Frame.description>Increases cooking speed and butchering speed. Lowers foodpoison chance by increasing the cleanliness of connected worktable.</SM_KitchenCupboard_B_Frame.description>
+
+  <SM_KitchenCupboard_C.label>kitchen cupboard C</SM_KitchenCupboard_C.label>
+  <SM_KitchenCupboard_C.description>Increases cooking speed and butchering speed. Lowers foodpoison chance by increasing the cleanliness of connected worktable.</SM_KitchenCupboard_C.description>
+  <SM_KitchenCupboard_C_Blueprint.label>kitchen cupboard C (blueprint)</SM_KitchenCupboard_C_Blueprint.label>
+  <SM_KitchenCupboard_C_Blueprint_Install.label>kitchen cupboard C (blueprint)</SM_KitchenCupboard_C_Blueprint_Install.label>
+  <SM_KitchenCupboard_C_Frame.label>kitchen cupboard C (building)</SM_KitchenCupboard_C_Frame.label>
+  <SM_KitchenCupboard_C_Frame.description>Increases cooking speed and butchering speed. Lowers foodpoison chance by increasing the cleanliness of connected worktable.</SM_KitchenCupboard_C_Frame.description>
+
+</LanguageData>
