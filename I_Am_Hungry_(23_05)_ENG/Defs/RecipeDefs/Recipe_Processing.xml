@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Cheese, Flour, Shrimp, Salom # RC1, VGP GG -->
+  <RecipeDef> <!-- CookMealBase -->
+    <defName>ProperMeal_CookCheese</defName>
+    <label>make cheese from milk</label>
+    <description>Cook and curdle some milk until it becomes delicious hard cheese.</description>
+	<jobString>Making Cheese.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+	<workSkill>Cooking</workSkill>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>Milk</li>
+			</thingDefs>
+		</filter>
+		<count>20</count> <!-- 25 -->
+	  </li>
+	</ingredients>
+	<products>
+		<IAmHungry_Cheese>5</IAmHungry_Cheese> <!-- RC1: Cheese, VGP GG: cheese -->
+	</products>
+	<fixedIngredientFilter Inherit="False">
+		<thingDefs>
+			<li>Milk</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter Inherit="False">
+		<thingDefs>
+			<li>Milk</li>
+		</thingDefs>
+	</defaultIngredientFilter>
+    <skillRequirements>
+		<Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>NutrientPaste</researchPrerequisite> <!-- NutrientPaste -->
+  </RecipeDef>
+
+  <!-- RWF, RC1, VGP GG -->
+  <RecipeDef>
+    <defName>ProperMeal_GrindFlour</defName>
+    <label>make flour from grains</label>
+    <description>Grind grains into flour, which can be processed further.</description>
+	<jobString>Grinding grains.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+	<workSkill>Cooking</workSkill>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>IAmHungry_RawWheat</li> <!-- RC1: RawWheat RawOats RawBarley -->
+				<li>RawCorn</li>
+				<li>RawRice</li>
+			</thingDefs>
+		</filter>
+		<count>5</count> <!-- 25 -->
+	  </li>
+	</ingredients>
+	<products>
+		<IAmHungry_Flour>5</IAmHungry_Flour>
+	</products>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>IAmHungry_RawWheat</li> <!-- RC1: RawWheat RawOats RawBarley -->
+			<li>RawCorn</li>
+			<li>RawRice</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<thingDefs>
+			<li>IAmHungry_RawWheat</li> <!-- RC1: RawWheat RawOats RawBarley -->
+			<li>RawCorn</li>
+			<li>RawRice</li>
+		</thingDefs>
+	</defaultIngredientFilter>
+    <skillRequirements>
+		<Cooking>3</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>Pemmican</researchPrerequisite> <!-- NutrientPaste -->
+  </RecipeDef>
+
+  <!-- YUMMY, Patch: Thanks -->
+  <RecipeDef>
+    <defName>ProperMeal_CookShrimp</defName>
+    <label>grill shrimps</label>
+    <description>Grill some shrimps with great flavor.</description>
+	<jobString>Making shrimp.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+	<workSkill>Cooking</workSkill>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+		<li>Campfire</li> <!-- Patch: all other Places, RC1:  -->
+	    <li>FueledStove</li>
+        <li>ElectricStove</li>
+    </recipeUsers>
+	<ingredients>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>DeadFish</li> <!-- Patch: Thanks DeadFish -->
+			</thingDefs>
+		</filter>
+		<count>20</count> <!-- 25 -->
+	  </li>
+	</ingredients>
+	<products>
+		<IAmHungry_Shrimp>5</IAmHungry_Shrimp>
+	</products>
+	<fixedIngredientFilter>
+		<categories>
+			<li>CorpsesFish</li> <!-- MeatRaw -->
+		</categories>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>CorpsesFish</li> <!-- MeatRaw -->
+		</categories>
+	</defaultIngredientFilter>
+    <skillRequirements>
+		<Cooking>10</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>PassiveCooler</researchPrerequisite> <!-- PackagedSurvivalMeal -->
+  </RecipeDef>
+
+  <!-- YUMMY, Patch: Thanks -->
+  <RecipeDef>
+    <defName>ProperMeal_CookSalmon</defName>
+    <label>cook salmons</label>
+    <description>Cook some salmons with great flavor.</description>
+	<jobString>Making salmon.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+	<workSkill>Cooking</workSkill>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+		<li>Campfire</li> <!-- Patch: all other Places, RC1:  -->
+	    <li>FueledStove</li>
+        <li>ElectricStove</li>
+    </recipeUsers>
+	<ingredients>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>DeadFish</li> <!-- MeatRaw -->
+			</thingDefs>
+		</filter>
+		<count>20</count> <!-- 25 -->
+	  </li>
+	</ingredients>
+	<products>
+		<IAmHungry_Salmon>5</IAmHungry_Salmon>
+	</products>
+	<fixedIngredientFilter>
+		<categories>
+			<li>CorpsesFish</li> <!-- MeatRaw -->
+		</categories>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>CorpsesFish</li> <!-- MeatRaw -->
+		</categories>
+	</defaultIngredientFilter>
+    <skillRequirements>
+		<Cooking>16</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>PassiveCooler</researchPrerequisite> <!-- PackagedSurvivalMeal -->
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!-- Workgiver -->
+  <WorkGiverDef>
+	<defName>DoBillsMillstone</defName>
+	<label>mill raw food</label>
+	<giverClass>WorkGiver_DoBill</giverClass>
+	<workType>Cooking</workType>
+    <prioritizeSustains>true</prioritizeSustains>
+	<priorityInType>32</priorityInType>
+	<verb>milling</verb>
+	<gerund>milling</gerund>
+	<requiredCapacities>
+      <li>Manipulation</li>
+	</requiredCapacities>
+    <fixedBillGiverDefs>
+      <li>Millstone</li> <!-- RC1: RC_Quernstone, RC_RollerMill, RC_FoodPrepSpot -->
+    </fixedBillGiverDefs>
+ </WorkGiverDef>
+
+</Defs>

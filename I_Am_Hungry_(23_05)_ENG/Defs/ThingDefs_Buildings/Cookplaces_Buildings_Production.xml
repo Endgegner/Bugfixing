@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Bakery</defName>
+		<label>Bakery</label>
+		<description>A full equipped Bakery with an attached countertop and a special hotbox for preparing meals in the right manner.</description>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Bakery</texPath>
+			<graphicClass>Graphic_Single</graphicClass> <!-- Multi -->
+			<drawSize>(4,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<uiIconPath>Things/Building/Bakery</uiIconPath>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>		
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Beauty>10</Beauty>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>Production</designationCategory> <!-- Patch: GEK OldStyleFurniture -->
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes> <!-- Interactive Patch: All Food Recipes -->
+			<li>LunchPack_MealSurvival</li>
+			<li>CookMealSurvival</li>
+			<li>ProperMeal_Bread</li>
+			<li>ProperMeal_BakedGoods</li>
+			<li>ProperMeal_CookCheese</li>
+			<li>ProperMeal_Knuckle</li>
+			<li>ProperMeal_Haunch</li>
+			<li>ProperMeal_Steak</li>
+			<li>Make_Pemmican</li>
+			<li>CookMealSimple</li>
+			<li>CookMealFine</li>
+			<li>CookMealLavish</li>
+			<li>CookMealComplete</li>
+			<li>CookMealExquisite</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3</heatPerSecond>
+				<heatPushMaxTemperature>38</heatPushMaxTemperature> <!-- 49 -->
+			</li>
+			<!-- <li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>GL_Cupboard</li>
+					<li>GL_TablewareShelf</li>
+				</linkableFacilities>
+			</li>  Patch: GEK CompProperties_AffectedByFacilities -->
+		</comps>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<heatPerTickWhileWorking>0.1</heatPerTickWhileWorking>
+		</building>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationHotKey>Misc8</designationHotKey>
+	</ThingDef>
+
+</Defs>

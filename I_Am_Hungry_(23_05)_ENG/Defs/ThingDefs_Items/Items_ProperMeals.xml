@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ########## Proper Meals Complete ########## -->
+<ThingDef ParentName="MealBase">
+    <defName>MealComplete</defName>
+    <label>complete meal</label>
+    <description>An excessive as extensive meal from a combination of bread, cheese, meat, eggs, vegetables, fruit and spices.\n\nA culinary masterpiece which nourishes body, mind, and soul with its harmonious selection of ingredients.</description>
+    <graphicData>
+      <texPath>Things/Meal/Complete</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+         <DeteriorationRate>1</DeteriorationRate>
+         <MarketValue>100</MarketValue>
+         <WorkToMake>1800</WorkToMake>
+         <Nutrition>1.8</Nutrition>
+    </statBases>
+    <ingestible>
+		 <foodType>Meal</foodType>
+         <preferability>MealLavish</preferability>
+		 <tasteThought>AteProperMeal_Luxus</tasteThought>
+         <ingestEffect>EatVegetarian</ingestEffect>
+		 <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+         <ingestSound>Meal_Eat</ingestSound>
+		<outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+         <hediffDef>Trunken_hediff_Cheese</hediffDef>
+         <severity>0.25</severity>
+        </li>
+		</outcomeDoers>
+    </ingestible>
+    <thingCategories Inherit="False">
+      <li>ProperMeals</li>
+    </thingCategories>
+	<tradeability>None</tradeability>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+	</comps>
+</ThingDef>
+
+<!-- ########## Exquisite Meal ########## -->
+<ThingDef ParentName="MealBase">
+    <defName>MealExquisite</defName>
+    <label>exquisite meal</label>
+    <description>An opulent meal from the combination of meat, grains, vegetables, fruit and spices. Some of the ingredients are wasted during the cooking process. Completely worth it though.\n\nMakes you feel better after.</description>
+    <graphicData>
+      <texPath>Things/Meal/Exquisite</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+         <DeteriorationRate>1</DeteriorationRate>
+         <MarketValue>100</MarketValue>
+         <WorkToMake>1500</WorkToMake>
+         <Nutrition>1.5</Nutrition>
+    </statBases>
+    <ingestible>
+		 <foodType>Meal</foodType>
+         <preferability>MealLavish</preferability>
+		 <tasteThought>AteProperMeal_Luxus</tasteThought>
+         <ingestEffect>EatVegetarian</ingestEffect>
+		 <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+         <ingestSound>Meal_Eat</ingestSound>
+		<outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+         <hediffDef>Trunken_hediff_Cheese</hediffDef>
+         <severity>0.25</severity>
+        </li>
+		</outcomeDoers>
+    </ingestible>
+    <thingCategories Inherit="False">
+      <li>ProperMeals</li>
+    </thingCategories>
+	<tradeability>None</tradeability>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+	</comps>
+</ThingDef>
+<!-- ########## Lunch Pack ########## -->
+<ThingDef ParentName="MealBase">
+    <defName>PackedLunch</defName> <!-- Patch: VGP GG, RimCuisine -->
+    <label>lunch package</label> <!-- loaf -->
+    <description>A packaged survival meal from the combination of bread and cheese, meat or eggs. Can be used for lunch too.\n\nWell thought out and perfectly balanced by billions of mothers.</description>
+    <graphicData>
+      <texPath>Things/Meal/PackedLunch</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+         <DeteriorationRate>1</DeteriorationRate>
+         <MarketValue>80</MarketValue>
+         <WorkToMake>3200</WorkToMake>
+         <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+		 <foodType>Meal</foodType>
+         <preferability>MealFine</preferability>
+		 <tasteThought>AteProperMeal_Luxus</tasteThought>
+         <ingestEffect>EatVegetarian</ingestEffect>
+         <ingestSound>Meal_Eat</ingestSound>
+		 <joyKind>Gluttonous</joyKind>
+		 <joy>0.3</joy>
+		 <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+		<outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+         <hediffDef>Trunken_hediff_Cheese</hediffDef>
+         <severity>0.25</severity>
+        </li>
+		</outcomeDoers>
+    </ingestible>
+    <thingCategories Inherit="False">
+      <li>ProperMeals</li>
+    </thingCategories>
+	<tradeability>None</tradeability>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>32</daysToRotStart> <!-- 64 -->
+        <rotDestroys>true</rotDestroys>
+      </li>
+	</comps>
+</ThingDef>
+
+</Defs>

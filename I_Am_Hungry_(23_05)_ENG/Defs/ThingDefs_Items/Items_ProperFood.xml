@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ########## Proper Food ########## -->
+<ThingDef ParentName="MealBase">
+    <defName>IAmHungry_Bread</defName>
+    <label>crusty bread</label> <!-- loaf -->
+    <description>Bakery's Finests, pleasantly scented and crunchy like no other. It has the wide favored form of a delicious baguette.\n\nThis gives you exactly the energy you need, for a long day of hard work.</description>
+    <graphicData>
+      <texPath>Things/Meal/BreadQuality</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+         <DeteriorationRate>2</DeteriorationRate>
+         <MarketValue>70</MarketValue>
+         <WorkToMake>1600</WorkToMake>
+      	 <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+    <preferability>MealFine</preferability>
+		 <tasteThought>AteProperMeal_Strength</tasteThought>
+         <ingestEffect>EatVegetarian</ingestEffect>
+         <ingestSound>Meal_Eat</ingestSound>
+        <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Trunken_hediff_Bread</hediffDef>
+          <severity>0.25</severity>
+        </li>
+		</outcomeDoers>
+    </ingestible>
+    <thingCategories Inherit="False">
+      <li>ProperMeals</li>
+    </thingCategories>
+	<tradeability>Buyable</tradeability>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>6</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="MealBase">
+    <defName>IAmHungry_Cheese</defName> <!-- Patch: VGP GG, RimCuisine -->
+    <label>golden cheese</label> <!-- loaf -->
+    <description>A very intense smelling food, made with milk and time.\n\nWars have been fought and lost because of this golden hunk of heaven.</description>
+    <graphicData>
+      <texPath>Things/Food/Cheese</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+         <DeteriorationRate>1</DeteriorationRate>
+         <MarketValue>80</MarketValue>
+         <WorkToMake>3200</WorkToMake>
+         <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+         <preferability>MealFine</preferability>
+		 <tasteThought>AteProperMeal_Luxus</tasteThought>
+         <ingestEffect>EatVegetarian</ingestEffect>
+         <ingestSound>Meal_Eat</ingestSound>
+		<outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+         <hediffDef>Trunken_hediff_Cheese</hediffDef>
+         <severity>0.25</severity>
+        </li>
+		</outcomeDoers>
+    </ingestible>
+    <thingCategories Inherit="False">
+      <li>ProperMeals</li>
+    </thingCategories>
+	<tradeability>Buyable</tradeability>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>64</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+	</comps>
+</ThingDef>
+
+<ThingDef ParentName="MealRottable">
+    <defName>IAmHungry_Shrimp</defName>
+    <label>giant shrimp</label>
+    <description>Fried in a small amount of very hot oil. Carries the flavor of any ingredient in a unique way.\n\n Incredible fresh, tasteful, somewhat greasy, but also with the right spicy touches. Yummy.</description>
+    <graphicData>
+    <texPath>Things/Food/Grilled_Shrimp</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<DeteriorationRate>5</DeteriorationRate>
+        <MarketValue>50</MarketValue>
+        <WorkToMake>600</WorkToMake>
+      	<Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+        <preferability>MealLavish</preferability>
+		<tasteThought>AteProperMeal_Seafood</tasteThought>
+        <ingestEffect>EatMeat</ingestEffect>
+        <ingestSound>Meal_Eat</ingestSound>
+        <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Trunken_hediff_Grilled</hediffDef>
+          <severity>0.25</severity>
+        </li>
+        </outcomeDoers>
+    </ingestible>
+    <thingCategories Inherit="False">
+	  <li>ProperMeals</li>
+    </thingCategories>
+</ThingDef>
+
+<ThingDef ParentName="MealRottable">
+    <defName>IAmHungry_Knuckle</defName>
+    <label>knuckle</label>
+    <description>Grilled at best above a hot camping fire. Smells like a present by an angel.\n\nThis food let your senses tingle, just by passing by.</description>
+    <graphicData>
+    <texPath>Things/Food/Knuckle</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<DeteriorationRate>3</DeteriorationRate>
+        <MarketValue>40</MarketValue>
+        <WorkToMake>700</WorkToMake>
+      	<Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+        <preferability>MealLavish</preferability>
+		<tasteThought>AteProperMeal_Perfect</tasteThought>
+        <ingestEffect>EatMeat</ingestEffect>
+        <ingestSound>Meal_Eat</ingestSound>
+        <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Trunken_hediff_Grilled</hediffDef>
+          <severity>0.25</severity>
+        </li>
+        </outcomeDoers>
+    </ingestible>
+    <thingCategories Inherit="False">
+	  <li>ProperMeals</li>
+    </thingCategories>
+</ThingDef>
+
+</Defs>

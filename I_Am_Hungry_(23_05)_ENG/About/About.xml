@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>I Am Hungry</name>
+	<author>Trunken</author>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<description>
+&lt;b&gt;&lt;color=#ff6c00&gt;Yummy!&lt;/color&gt;&lt;/b&gt;
+
+Adds a Stove to cook
+Adds a Fireplace to cook (warm)
+Adds 8 Recipes with different taste
+
+Supports RimCuisine, Gloomy Furniture &amp; Extra Kitchen!
+Works together with VGP, Rimstro and Thanks For All The Fish!
+
+Compatibility:
+- Rimstro (Cooking Places)
+- Gloomy Furniture (Cooking Places)
+- Gloomy Extra Kitchen (Cooking Places)
+- Thanks For All The Fish (Salmon, Shrimps)
+- VGP Vegetable Garden (Ingredients Wheat/Flour)
+- VGP Garden Gourmet
+- RimCuisine (Ingredients Wheat/Flour)
+- Real World Food
+- Dianne's Food
+- Seeds Please
+
+Included Patches are interactive and react to user decisions. Mods will only be combined, when found. Just load I Am Hungry after your other Food Mods to let it do its work.
+	</description>
+</ModMetaData>
+

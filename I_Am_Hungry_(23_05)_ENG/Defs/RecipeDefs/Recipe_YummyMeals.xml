@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Yummy Meals Knuckle, Haunch, Steak, Bread, Baked Goods -->
+  <RecipeDef ParentName="CookMealBase">
+    <defName>ProperMeal_Knuckle</defName>
+    <label>make knuckle</label>
+    <description>Grill some delicious and tasty meat, which melts on your tongue, once it hits the right temperature.</description>
+	<jobString>Making real meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+		<li>Campfire</li> <!-- Patch: all other Places, RC1:  -->
+	    <li>FueledStove</li>
+        <li>ElectricStove</li>
+    </recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Meat_Alpaca</li>
+					<li>Meat_Chicken</li>
+					<li>Meat_Dromedary</li>
+					<li>Meat_Hare</li>
+					<li>Meat_Pig</li>
+					<li>Meat_Turkey</li>
+					<li>Meat_Chicken</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+	</ingredients>
+	<products>
+		<IAmHungry_Knuckle>5</IAmHungry_Knuckle>
+	</products>
+	<fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>MeatRaw</li>
+		</categories>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter Inherit="False">
+		<categories>
+			<li>MeatRaw</li>
+		</categories>
+	</defaultIngredientFilter>
+    <skillRequirements>
+		<Cooking>4</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>Pemmican</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>ProperMeal_Haunch</defName>
+    <label>make haunch</label>
+    <description>Grill some selected and tender meat, which melts on your tongue, once it hits the right temperature.</description>
+	<jobString>Making real meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+		<li>Campfire</li> <!-- Patch: all other Places, RC1:  -->
+	    <li>FueledStove</li>
+        <li>ElectricStove</li>
+    </recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Meat_Alpaca</li>
+					<li>Meat_Dromedary</li>
+					<li>Meat_Deer</li>
+					<li>Meat_Elephant</li>
+					<li>Meat_Ibex</li>
+					<li>Meat_Muffalo</li>
+					<li>Meat_Pig</li>
+					<li>Meat_Rhinoceros</li>
+					<li>Meat_Thrumbo</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+	</ingredients>
+	<products>
+		<IAmHungry_Haunch>5</IAmHungry_Haunch>
+	</products>
+	<fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>MeatRaw</li>
+		</categories>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter Inherit="False">
+		<categories>
+			<li>MeatRaw</li>
+		</categories>
+	</defaultIngredientFilter>
+    <skillRequirements>
+		<Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>Pemmican</researchPrerequisite> <!-- Patch RC1 -->
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>ProperMeal_Steak</defName>
+    <label>make bloody steak</label>
+    <description>Cook some meat in the right fashion. Kissed by the flames.</description>
+	<jobString>Making real meat.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+	    <li>FueledStove</li>
+        <li>ElectricStove</li>
+    </recipeUsers>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Meat_Deer</li>
+					<li>Meat_Elephant</li>
+					<li>Meat_Muffalo</li>
+					<li>Meat_Pig</li>
+					<li>Meat_Rhinoceros</li>
+					<li>Meat_Thrumbo</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+	</ingredients>
+	<products>
+		<IAmHungry_Haunch>5</IAmHungry_Haunch>
+	</products>
+	<fixedIngredientFilter Inherit="False">
+		<categories>
+			<li>MeatRaw</li>
+		</categories>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter Inherit="False">
+		<categories>
+			<li>MeatRaw</li>
+		</categories>
+	</defaultIngredientFilter>
+    <skillRequirements>
+		<Cooking>12</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>Pemmican</researchPrerequisite> <!-- Patch RC1 -->
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>ProperMeal_Bread</defName>
+    <label>make bread</label>
+    <description>Bake some fresh bread for the community.</description>
+	<jobString>Making crunchy bread.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>IAmHungry_Flour</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>EggChickenUnfertilized</li>
+					<li>Milk</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+	<products>
+		<IAmHungry_Bread>5</IAmHungry_Bread>
+	</products>
+	<fixedIngredientFilter Inherit="False">
+		<thingDefs>
+			<li>IAmHungry_Flour</li>
+			<li>EggChickenUnfertilized</li>
+			<li>Milk</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter Inherit="False">
+		<thingDefs>
+			<li>IAmHungry_Flour</li>
+			<li>EggChickenUnfertilized</li>
+			<li>Milk</li>
+		</thingDefs>
+	</defaultIngredientFilter>
+    <skillRequirements>
+		<Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>NutrientPaste</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookMealBase">
+    <defName>ProperMeal_BakedGoods</defName>
+    <label>make baked goods</label>
+    <description>Bake some crusty bread for the community.</description>
+	<jobString>Making crusty bread.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>IAmHungry_Flour</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>EggChickenUnfertilized</li>
+					<li>Milk</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	  <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li> <!-- VegetablesRaw FruitRaw --> 
+          </categories>
+        </filter>
+        <count>1</count>
+	  </li>
+	</ingredients>
+	<products>
+		<IAmHungry_Bread>5</IAmHungry_Bread>
+	</products>
+	<fixedIngredientFilter Inherit="False">
+		<thingDefs>
+			<li>IAmHungry_Flour</li>
+			<li>EggChickenUnfertilized</li> <!-- category: EggsUnfertilized -->
+			<li>Milk</li>
+		</thingDefs>
+		<categories>
+			<li>PlantFoodRaw</li> <!-- VegetablesRaw FruitRaw -->
+		</categories>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter Inherit="False">
+		<thingDefs>
+			<li>IAmHungry_Flour</li>
+			<li>EggChickenUnfertilized</li>
+			<li>Milk</li>
+		</thingDefs>
+		<categories>
+			<li>PlantFoodRaw</li> <!-- VegetablesRaw FruitRaw -->
+		</categories>
+	</defaultIngredientFilter>
+    <skillRequirements>
+		<Cooking>12</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>NutrientPaste</researchPrerequisite> <!-- Patch RC1 -->
+  </RecipeDef>
+
+</Defs>

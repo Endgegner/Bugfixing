@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Crops -->
+  <ThingDef ParentName="PlantBase">
+		<defName>IAmHungry_PlantWheat</defName>
+		<label>wheat</label>
+		<description>A widely grown crop processed by millers into flour, which on other hand is used by bakers and confectioners for their delicious goods.\n\nCereal grain is a real world staple.</description>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<Nutrition>0.35</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/WheatPlant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>11</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.7</fertilityMin>
+			<dieIfLeafless>true</dieIfLeafless>
+			<sowMinSkill>8</sowMinSkill>
+			<sowWork>200</sowWork>
+			<harvestWork>250</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>IAmHungry_RawWheat</harvestedThingDef> <!-- Target: RawWheat, Rawwheat -->
+			<!-- <maxMeshCount>4</maxMeshCount> -->
+			<harvestYield>24</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<growDays>9</growDays>
+			<immatureGraphicPath>Things/Plant/WheatPlant_Immature</immatureGraphicPath>
+			<visualSizeRange>
+			  <min>0.3</min>
+			  <max>1.4</max>
+			</visualSizeRange>
+			<wildClusterWeight>75</wildClusterWeight>
+			<wildBiomes>
+				<TropicalRainforest>.15</TropicalRainforest>
+				<TemperateForest>.25</TemperateForest>
+			</wildBiomes>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildOrder>2</wildOrder>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li> <!-- Target: BasicAgriculture -->
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure> <!-- 0 0.35 -->
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+
+</Defs>
